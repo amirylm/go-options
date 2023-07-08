@@ -1,4 +1,4 @@
-lintx:
+lint:
 	@docker run --rm -v $(shell pwd):/app -w /app golangci/golangci-lint:latest golangci-lint run -v --timeout=5m ./...
 
 fmt:
