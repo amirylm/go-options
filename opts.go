@@ -12,7 +12,9 @@ func Apply[O any](opts *O, options ...Option[O]) *O {
 	}
 
 	for _, o := range options {
-		o(opts)
+		if o != nil {
+			o(opts)
+		}
 	}
 
 	return opts
