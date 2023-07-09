@@ -7,7 +7,7 @@ func TestApply(t *testing.T) {
 	if opts == nil {
 		t.Fail()
 	}
-	_ = Apply(opts, WithName("world"))
+	_ = Apply(opts, WithName("world"), nil)
 	if opts == nil {
 		t.Fail()
 	} else if opts.name != "world" {
