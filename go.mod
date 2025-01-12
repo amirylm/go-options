@@ -1,3 +1,3 @@
 module github.com/amirylm/go-options
 
-go 1.20
+go 1.23
